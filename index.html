@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Login</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="login">
+  <main>
+
+    <section class="content">
+      <aside class="content-section">
+        <h3 class="section-title">Accede a tu cuenta</h3>
+        <form data-js="login-form">
+          <div class="inputComp">
+            <input type="text" id="username" name="mail" class="inputField inputField--mail" required placeholder=" " pattern="user" >
+            <label for="username" class="placeholder">Email</label>
+            <span class="inputMsg--invalid">El formato no es correcto</span>
+          </div>
+          <div class="inputComp">
+            <input type="checkbox" class="inputAfter inputAfter--show">
+            <input type="password" name="pass" id="userpass" class="inputField inputField--pass" required placeholder=" "  pattern="12345">
+            <label for="userpass" class="placeholder">Contraseña</label>
+            <a href="#" class="inputMsg inputMsg--link text-right mt-1">Olvidé mi contraseña</a>
+          </div>
+          <button type="submit" class="button--primary mv-15" data-js="login-btn">Iniciar sesión</button>
+        </form>
+        <nav class="alternate">
+          <h4 class="alternate-title">&#9675</h4>
+          <a class="link link--facebook" href="#">Acceder con Facebook</a>
+          <a class="link link--strava" href="#">Acceder con Strava</a>
+        </nav>
+      </aside>
+      <aside class="content-section content-section--secundary">
+        <h3 class="section-title">¿Eres nuevo en Tuvalum?</h3>
+        <form action="" data-js="signup-form">
+          <fieldset class="fieldset">
+            <label  class="radio-label">
+              <input class="radio" type="radio" name="signup" value="user" checked> Regístrate como particular</label>
+            <label  class="radio-label">
+              <input class="radio" type="radio" name="signup" value="shop"> Regístrate como tienda</label>
+          </fieldset>
+          <button type="button" class="button--ghost mv-1" data-js="signup-btn">Registrarme ahora</button>
+        </form>
+      </aside>
+    </section>
+  </main>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
